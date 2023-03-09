@@ -36,10 +36,37 @@ export default {
 
 <style scoped>
 .contact-form {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 400px;
   margin: 0 auto;
 }
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+button[type='submit'] {
+  background-color: darkturquoise;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: mediumturquoise;
+}
+
 </style>
