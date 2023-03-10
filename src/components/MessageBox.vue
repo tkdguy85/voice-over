@@ -1,5 +1,6 @@
 <template>
   <form @submit.prevent="submitForm" class="contact-form">
+    <p>Message Box</p>
     <label for="name">Name</label>
     <input type="text" id="name" v-model="name" required>
 
@@ -36,12 +37,12 @@ export default {
 
 <style scoped>
 .contact-form {
-  padding-top: 100px;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 10px 200px;
 }
 
 label {

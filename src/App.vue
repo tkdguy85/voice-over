@@ -1,6 +1,7 @@
 <template>
   <MainCard/>
   <MessageBox/>
+
 </template>
 
 <script>
@@ -22,7 +23,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+}
+body {
+  background: linear-gradient(#001369, #000, #001369);
+  margin: 0;
 }
 </style>
