@@ -1,6 +1,6 @@
 <template>
   <div class="logo-container">
-    <img class="logo" src="../assets/quotes.jpg" alt="Voice Over Logo">
+    <img class="logo" src="../assets/logo.png" alt="Voice Over Logo">
     <div class="intro-name">
       <h1>Salena Metreger</h1>
       <p>Voice Over Artist</p>   
@@ -74,8 +74,6 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* Update logo and header to match pdf */
-    background-color: #001369;
     border-bottom: 1px solid grey;
   }
 
