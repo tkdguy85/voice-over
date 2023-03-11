@@ -19,14 +19,14 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Lora, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
 }
 body {
-  background: linear-gradient(#001369, #000, #001369);
+  background: linear-gradient(#001369, #000012, #001369);
   margin: 0;
 }
 </style>

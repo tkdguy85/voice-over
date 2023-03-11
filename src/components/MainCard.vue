@@ -57,6 +57,10 @@ export default {
     height: 75px;
   }
 
+  .intro-name {
+    text-transform: uppercase;
+  }
+
   .main-container, .logo-container {
     margin: 10px 200px;
   }
@@ -98,6 +102,5 @@ export default {
     padding: 20px;
     color: white;
   }
-
 
 </style>
