@@ -6,18 +6,42 @@
       <p>Voice Over Artist</p>   
     </div>
   </div>
+
   <div class="main-container">
     <div class="contact-container">
       <div class="contact-details">
         <h1>Contact Me:</h1>
-        <p>Email logo to</p>
-        <a href="mailto:test@email.com">test@email.com</a>
+        <p>Email me at</p>
+        <a class="contact-email" href="mailto:salenamvo@gmail.com">salenamvo@gmail.com</a>
+        <p>Or fill out the contact form below!</p>
       </div>
       <!-- Message Box to be moved to here -->
-      <div class="voiceover-clips">
-        <a class="audio-sample" href="#">Sample #1 </a>
-        <a class="audio-sample" href="#">Sample #2 </a>
-        <a class="audio-sample" href="#">Sample #3 </a>
+      <div class="voiceover-clip-container">
+        
+        <h2>My Demos</h2>
+        <!-- First Clip 1 -->
+        <div class="voiceover-clip">
+          <p>Commercial Demo 1</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/com_demo_1.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        
+        <!-- Second Clip 1 -->
+        <div class="voiceover-clip">
+          <p>Commercial Demo 2</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/com_demo_2.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        
+        <!-- Third Clip 1 -->
+        <div class="voiceover-clip">
+          <p>Narration Demo 1</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/nar_demo_1.mp3' type="audio/mpeg">
+          </audio>
+        </div>
       </div>
     </div>
 
@@ -48,11 +72,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
   img {
-    height: 200px;
+    height: 400px;
     border-radius: 20%;
   }
+
   .logo {
     height: 75px;
   }
@@ -65,12 +98,13 @@ export default {
     margin: 10px 200px;
   }
 
-  .hero-container, 
-  .bio-container {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
+  .hero-container {
+    text-align: center;
+    padding-bottom: 50px;
+  }
 
+  .bio-container {
+    text-align: left;
   }
 
   .logo-container {
@@ -93,11 +127,24 @@ export default {
     text-align: left;
   }
 
-  .voiceover-clips {
+  .contact-email {
+    text-decoration: none;
+    color: lightskyblue;
+    font-size: 26px;
+  }
+
+  .voiceover-clip-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .voiceover-clip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .audio-sample {
     padding: 20px;
     color: white;

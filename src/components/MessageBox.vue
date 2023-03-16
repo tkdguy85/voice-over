@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="submitForm" class="contact-form">
-    <p>Message Box</p>
+    <p>Contact Form</p>
     <label for="name">Name</label>
     <input type="text" id="name" v-model="name" required>
 
