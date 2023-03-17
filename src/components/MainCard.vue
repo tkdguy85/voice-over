@@ -12,10 +12,13 @@
       <div class="contact-details">
         <h1>Contact Me:</h1>
         <p>Email me at</p>
+        <img class="email" src="../assets/email.png" alt="Voice Over Logo">
+        <br>
         <a class="contact-email" href="mailto:salenamvo@gmail.com">salenamvo@gmail.com</a>
         <p>Or fill out the contact form below!</p>
       </div>
       <!-- Message Box to be moved to here -->
+      
       <div class="voiceover-clip-container">
         
         <h2>My Demos</h2>
@@ -24,6 +27,7 @@
           <p>Commercial Demo 1</p>
           <audio controls class="audio-sample">
             <source src='../audio/com_demo_1.mp3' type="audio/mpeg">
+            Your browser does not support the audio element.
           </audio>
         </div>
         
@@ -88,6 +92,10 @@ export default {
 
   .logo {
     height: 75px;
+  }
+
+  .email {
+    height: 50px;
   }
 
   .intro-name {
