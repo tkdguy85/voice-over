@@ -85,7 +85,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   h1 {
     font-size: 34px;
   }
@@ -113,7 +113,9 @@ export default {
   }
 
   .intro-name {
-    text-transform: uppercase;
+    h1 {
+      text-transform: uppercase;
+    }  
   }
 
   .container {

@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Lora, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
