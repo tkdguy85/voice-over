@@ -59,7 +59,7 @@
       <!-- Main Photo -->
       <div class="hero-container">
         <div class="link">
-          <img src="../assets/selfie.jpg" alt="Self portrait">
+          <img class="portrait" src="../assets/selfie.jpg" alt="Self portrait">
           <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
         </div>
       </div>
@@ -98,8 +98,13 @@ export default {
     font-size: 20px;
   }
 
-  img {
-    height: 400px;
+  .portrait {
+    // @media (max-width: 800px) {
+    //   height: 200px;
+    // }
+    height: 100%;
+    max-width: 400px;
+    width: 80vw;
     border-radius: 20%;
   }
 
@@ -119,6 +124,9 @@ export default {
   }
 
   .container {
+    @media (max-width: 1000px) {
+      margin: 10px 40px;
+    }
     margin: 10px 200px;
   }
 
@@ -133,6 +141,9 @@ export default {
   }
 
   .logo-container {
+    @media (max-width: 800px) {
+      display: block;
+    }
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -141,6 +152,9 @@ export default {
   }
 
   .contact-container {
+    @media (max-width: 800px) {
+      display: block;
+    }
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -149,24 +163,34 @@ export default {
   }
 
   .contact-details {
+    @media (max-width: 800px) {
+      text-align: center;
+    }
     text-align: left;
   }
 
   .contact-email {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: lightskyblue;
     font-size: 26px;
   }
 
   .voiceover-clip-container {
+    @media (max-width: 800px) {
+      display: block;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
   .voiceover-clip {
+    @media (max-width: 800px) {
+      display: block;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
