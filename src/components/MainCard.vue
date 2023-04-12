@@ -70,6 +70,17 @@
           <h1>About the Artist</h1>
           <p>Salena Metreger is a talented voice over artist with a dynamic range and a fun personality. A true professional with a background in marketing and business, she understands that each project is a representation of your Brand and Company and she will strive to bring your project to life quickly and professionally. She prides herself on being easy and fun to work with, able to take direction, and always reliable.</p>
         </div>
+        <div class="equipment">
+          <h1>Equipment</h1>
+          <ul>
+            <li>Sound Treated In-Home Studio</li>
+            <li>Audio-Technica AT2020 Cardioid Condenser Studio XLR Microphone with Pop Filter</li>
+            <li>Beyerdynamic DT 770 PRO Headphones</li>
+            <li>Focusrite Scarlett Solo 3rd Gen USB Audio Interface</li>
+            <li>Soundforge Audio Studio</li>
+            <li>Thinkpad Custom Built Laptop</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -99,11 +110,8 @@ export default {
   }
 
   .portrait {
-    // @media (max-width: 800px) {
-    //   height: 200px;
-    // }
     height: 100%;
-    max-width: 400px;
+    max-width: 600px;
     width: 80vw;
     border-radius: 20%;
   }
@@ -138,6 +146,9 @@ export default {
   .bio-container {
     text-align: left;
     padding-bottom: 100px;
+    ul {
+      padding-inline-start: 20px;
+    }
   }
 
   .logo-container {
