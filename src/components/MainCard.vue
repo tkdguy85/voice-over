@@ -208,7 +208,7 @@ export default {
   }
 
   .audio-sample {
-    padding: 20px;
+    padding: 10px 20px;
     color: white;
   }
 
