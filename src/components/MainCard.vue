@@ -59,7 +59,11 @@
       <!-- Main Photo -->
       <div class="hero-container">
         <div class="link">
-          <img class="portrait" src="../assets/selfie.jpg" alt="Self portrait">
+          <div class="portrait-container">
+            <img class="head-shot" src="../assets/headshot.jpg" alt="Salena's Head shot photo">
+            <img class="portrait" src="../assets/selfie.jpg" alt="Self portrait">
+          </div>
+
           <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
         </div>
       </div>
@@ -114,6 +118,30 @@ export default {
     max-width: 600px;
     width: 80vw;
     border-radius: 20%;
+  }
+
+  .head-shot {
+    height: 100%;
+    max-width: 330px;
+    width: 80vw;
+    border-radius: 20%;
+    @media (max-width: 1000px) {
+      margin-bottom: 50px;
+      margin-right: 0;
+    }
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .portrait-container {
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
   }
 
   .logo {
