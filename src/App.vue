@@ -29,6 +29,14 @@ export default {
   color: #fff;
 }
 
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #001369;
+}
+
 body {
   background-image: linear-gradient(#001369, #000012, #001369);
   margin: 0;
