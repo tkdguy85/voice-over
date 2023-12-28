@@ -53,6 +53,15 @@
               <source src='../audio/nar_demo_1.mp3' type="audio/mpeg">
             </audio>
           </div>
+
+          <!-- Fourth Clip 1 -->
+          <div class="voiceover-clip">
+            <p>Creature Demo</p>
+            <audio controls class="audio-sample">
+              <source src='../audio/creature_demo.mp3' type="audio/mpeg">
+            </audio>
+          </div>
+
         </div>
       </div>
 
@@ -84,6 +93,23 @@
             <li>Soundforge Audio Studio</li>
             <li>Thinkpad Custom Built Laptop</li>
           </ul>
+        </div>
+        <div class="recents">
+          <h1>Recent Projects</h1>
+          <div>
+            <div class="voiceover-clip">
+              <p>Commercial Sample</p>
+              <audio controls class="audio-sample">
+                <source src='../audio/bhbc_sample.wav' type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="voiceover-clip">
+              <p>Character Sample</p>
+              <audio controls class="audio-sample">
+                <source src='../audio/shanti_sample.mp3' type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -192,7 +218,7 @@ export default {
 
   .contact-container {
     @media (max-width: 800px) {
-      display: block;
+      flex-direction: column;
     }
     display: flex;
     flex-direction: row;
@@ -230,6 +256,7 @@ export default {
     @media (max-width: 800px) {
       display: block;
     }
+    max-width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
