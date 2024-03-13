@@ -53,8 +53,16 @@
               <source src='../audio/nar_demo_1.mp3' type="audio/mpeg">
             </audio>
           </div>
-
+          
           <!-- Fourth Clip 1 -->
+          <div class="voiceover-clip">
+            <p>Animation Demo</p>
+            <audio controls class="audio-sample">
+              <source src='../audio/anim_demo.mp3' type="audio/mpeg">
+            </audio>
+          </div>
+          
+          <!-- Fifth Clip 1 -->
           <div class="voiceover-clip">
             <p>Creature Demo</p>
             <audio controls class="audio-sample">
@@ -195,6 +203,9 @@ export default {
   .hero-container {
     text-align: center;
     padding-bottom: 50px;
+    p {
+      padding-top: 20px;
+    }
   }
 
   .bio-container {
