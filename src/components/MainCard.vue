@@ -149,11 +149,11 @@
           <p class="testimonial">
             "She is a very gifted actress with unique vocal qualities. I would have no hesitation recommending Salena to any project. She would be an asset to any production she was cast in." 
           </p>
-          <p class="attribute">- Bunny Del Mar Media Arts</p>
+          <p class="attribute">- Bunny - Del Mar Media Arts</p>
           
           <!-- Testimonial 2 -->
           <p class="testimonial">
-            "Salena is so cool. I love to see physication and visual acting. It is so important. I will certainly remember Miss Salena." 
+            "Salena is so cool. I love to see physication and visual acting. It is so important. I will certainly remember Ms. Salena." 
           </p>
           <p class="attribute">- Jonathan M J - Performance Production</p>
           
