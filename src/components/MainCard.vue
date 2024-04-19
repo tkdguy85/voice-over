@@ -14,16 +14,28 @@
     <div class="main-container">
       
       <!-- Contact And Demo Section -->
-      <div class="contact-container">
-        <!-- Contact Section -->
-        <div class="contact-details">
-          <h2>Contact Me:</h2>
-          <a class="contact-email" href="mailto:salenamvo@gmail.com">
-            <img class="email-logo" src="../assets/email.png" alt="Voice Over Logo">
-            <p>salenamvo@gmail.com</p>
-          </a>
+      <div class="intro-container">
+        <!-- Headshot -->
+        <div class="contact-headshot">
+          <img class="head-shot" src="../assets/headshot.jpg" alt="Salena's Head-shot photo">
+          
+          <!-- Contact Section -->
+          <div class="contact-details">
+            <h2>Contact Me:</h2>
+            <!-- Email -->
+            <a class="contact-email" href="mailto:salenamvo@gmail.com">
+              <img class="email-logo" src="../assets/email.png" alt="Voice Over Logo">
+              <p>salenamvo@gmail.com</p>
+            </a>
+            
+            <!-- Phone -->
+            <a class="contact-phone" href="tel:442-500-4421" >
+              <img class="phone-logo" src="../assets/phone-2.png" alt="Voice Over Logo">
+              <p>442-500-4421</p>
+            </a>
+          </div>
         </div>
-        <!-- TODO: Message Box to be moved to here -->
+
         
         <!-- Voiceover Section -->
         <div class="voiceover-clip-container">       
@@ -31,7 +43,7 @@
 
           <!-- First Clip 1 -->
           <div class="voiceover-clip">
-            <p>Commercial Demo 1</p>
+            <p>Commercial</p>
             <audio controls class="audio-sample">
               <source src='../audio/com_demo_1.mp3' type="audio/mpeg">
               Your browser does not support the audio element.
@@ -40,7 +52,7 @@
           
           <!-- Second Clip 1 -->
           <div class="voiceover-clip">
-            <p>Commercial Demo 2</p>
+            <p>Commercial</p>
             <audio controls class="audio-sample">
               <source src='../audio/com_demo_2.mp3' type="audio/mpeg">
             </audio>
@@ -48,7 +60,7 @@
           
           <!-- Third Clip 1 -->
           <div class="voiceover-clip">
-            <p>Narration Demo 1</p>
+            <p>Narration</p>
             <audio controls class="audio-sample">
               <source src='../audio/nar_demo_1.mp3' type="audio/mpeg">
             </audio>
@@ -56,17 +68,9 @@
           
           <!-- Fourth Clip 1 -->
           <div class="voiceover-clip">
-            <p>Animation Demo</p>
+            <p>Animation</p>
             <audio controls class="audio-sample">
               <source src='../audio/anim_demo.mp3' type="audio/mpeg">
-            </audio>
-          </div>
-          
-          <!-- Fifth Clip 1 -->
-          <div class="voiceover-clip">
-            <p>Creature Demo</p>
-            <audio controls class="audio-sample">
-              <source src='../audio/creature_demo.mp3' type="audio/mpeg">
             </audio>
           </div>
 
@@ -77,8 +81,7 @@
       <div class="hero-container">
         <div class="link">
           <div class="portrait-container">
-            <img class="head-shot" src="../assets/headshot.jpg" alt="Salena's Head shot photo">
-            <img class="portrait" src="../assets/selfie.jpg" alt="Self portrait">
+            <img class="portrait" src="../assets/studio-shot.jpg" alt="Self portrait in studio">
           </div>
 
           <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
@@ -89,8 +92,13 @@
       <div class="bio-container">
         <div class="about-me">
           <h1>About the Artist</h1>
-          <p>Salena Metreger is a talented voice over artist with a dynamic range and a fun personality. A true professional with a background in marketing and business, she understands that each project is a representation of your Brand and Company and she will strive to bring your project to life quickly and professionally. She prides herself on being easy and fun to work with, able to take direction, and always reliable.</p>
+          <p>Salena Metreger is not just a voice over artist; she's the vibrant, versatile voice your project needs to soar. With a background in marketing and a strong business acumen, Salena approaches each project as a canvas for your brand's narrative. Her commitment to professionalism is matched only by her dedication to infusing every script with life, energy, and personality.
+          <br>
+          <br>
+          Salena's voice type is as diverse as her skill set. From warm and inviting to authoritative and commanding, she has the versatility to bring any character or concept to life. Whether you need a relatable spokesperson, a reassuring narrator, or a quirky animated character, Salena's voice is the secret ingredient that adds depth and dimension to your project. Her dynamic range allows her to seamlessly transition from corporate narration to quirky character roles, ensuring that each delivery is tailored to resonate with your target audience. Whether it's a commercial, e-learning module, audiobook, or video game.</p>
         </div>
+        
+        <!-- Equipment -->
         <div class="equipment">
           <h1>Equipment</h1>
           <ul>
@@ -102,24 +110,62 @@
             <li>Thinkpad Custom Built Laptop</li>
           </ul>
         </div>
+        
         <div class="recents">
-          <h1>Recent Projects</h1>
+          <h1>Samples</h1>
+          
           <div>
+            <!-- Clip 1 -->
             <div class="voiceover-clip">
               <p>Commercial Sample</p>
               <audio controls class="audio-sample">
                 <source src='../audio/bhbc_sample.wav' type="audio/mpeg">
               </audio>
             </div>
+            
+            <!-- Clip 2 -->
             <div class="voiceover-clip">
               <p>Character Sample</p>
               <audio controls class="audio-sample">
                 <source src='../audio/shanti_sample.mp3' type="audio/mpeg">
               </audio>
             </div>
+            
+            <!-- Clip 3 -->
+            <div class="voiceover-clip">
+              <p>Explainer Sample</p>
+              <audio controls class="audio-sample">
+                <source src='../audio/weiser_sample.mp3' type="audio/mpeg">
+              </audio>
+            </div>
+          
           </div>
         </div>
+        
+        <div class="testimonials">
+          <h1>Testimonials</h1>
+          
+          <!-- Testimonial 1 -->
+          <p class="testimonial">
+            "She is a very gifted actress with unique vocal qualities. I would have no hesitation recommending Salena to any project. She would be an asset to any production she was cast in." 
+          </p>
+          <p class="attribute">- Bunny Del Mar Media Arts</p>
+          
+          <!-- Testimonial 2 -->
+          <p class="testimonial">
+            "Salena is so cool. I love to see physication and visual acting. It is so important. I will certainly remember Miss Salena." 
+          </p>
+          <p class="attribute">- Jonathan M J - Performance Production</p>
+          
+          <!-- Testimonial 3 -->
+          <p class="testimonial">
+            "Took direction well. A bright, young, even child-like voice. I hear her having a future in animation." 
+          </p>
+          <p class="attribute">- Mike S - Beard Boy Productions</p>
+        </div>
+
       </div>
+
     </div>
   </div>
 </template>
@@ -147,28 +193,8 @@ export default {
     font-size: 20px;
   }
 
-  .portrait {
-    height: 100%;
-    max-width: 600px;
-    width: 80vw;
-    border-radius: 20%;
-  }
-
-  .head-shot {
-    height: 100%;
-    max-width: 330px;
-    width: 80vw;
-    border-radius: 20%;
-    @media (max-width: 1000px) {
-      margin-bottom: 50px;
-      margin-right: 0;
-    }
-    margin-bottom: 0;
-    margin-right: 50px;
-  }
-
   .portrait-container {
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       flex-direction: column;
     }
     display: flex;
@@ -176,6 +202,13 @@ export default {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    
+    .portrait {
+      height: 100%;
+      max-width: 600px;
+      width: 80vw;
+      border-radius: 20%;
+    }
   }
 
   .logo {
@@ -185,6 +218,12 @@ export default {
   .email-logo {
     height: 36px;
     margin-right: 16px;
+  }
+
+  .phone-logo {
+    height: 45px;
+    margin-left: -5px;
+    margin-right: 13px;
   }
 
   .intro-name {
@@ -216,8 +255,49 @@ export default {
     }
   }
 
-  .logo-container {
+  .about-me,
+  .equipment,
+  .recents,
+  .testimonials {
     @media (max-width: 800px) {
+      padding-bottom: 30px;
+    }
+    
+    padding-bottom: 50px;
+  }
+
+  .equipment {
+    li {
+      margin-left: 20px;
+      padding-left: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .testimonial {
+    font-weight: bold;
+    font-size: 16px;
+    width: 60%;
+    
+    @media (max-width: 800px) {
+      width: 80%;
+    }
+  }
+
+  .attribute {
+    font-size: 14px;
+    margin-left: 30px;
+    font-style: italic;
+    padding-bottom: 20px;
+    width: 60%;
+
+    @media (max-width: 600px) {
+      width: 80%;
+    }
+  }
+
+  .logo-container {
+    @media (max-width: 600px) {
       display: block;
     }
     display: flex;
@@ -227,35 +307,65 @@ export default {
     border-bottom: 1px solid grey;
   }
 
-  .contact-container {
-    @media (max-width: 800px) {
+  .intro-container {
+    @media (max-width: 1340px) {
       flex-direction: column;
+      justify-self: center;
     }
+
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     padding-bottom: 50px;
     justify-content: space-between;
   }
 
-  .contact-details {
-    @media (max-width: 800px) {
-      text-align: center;
+  .contact-headshot,
+  .contact-details,
+  .voiceover-clip-container {
+    @media (max-width: 1000px) {
+      padding-bottom: 50px;
     }
-    text-align: left;
+    padding-bottom: 0;
   }
 
-  .contact-email {
+  .contact-headshot {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    text-decoration: none;
-    color: lightskyblue;
-    font-size: 26px;
+  
+    .head-shot {
+      max-width: 330px;
+      max-height: 300px;
+      margin: 10px 35px 0 0px;
+      border-radius: 20%;
+
+      @media (max-width: 1000px) {
+        margin: 50px 20px 50px 0;
+      }
+    }
+
+    .contact-details {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-email, 
+    .contact-phone {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: lightskyblue;
+      font-size: 26px;
+      justify-content: left;
+    }
   }
 
   .voiceover-clip-container {
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       display: block;
     }
     display: flex;
@@ -264,7 +374,7 @@ export default {
   }
 
   .voiceover-clip {
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       display: block;
     }
     max-width: 500px;
