@@ -1,21 +1,15 @@
 <template>
   <MainCard/>
-  <!-- TODO: Future update of Message Box component and delivery -->
-  <!-- <MessageBox/> -->
-
 </template>
 
 <script>
 import MainCard from './components/MainCard.vue'
-// TODO: Message Box Setup
-// import MessageBox from './components/MessageBox.vue'
+
 
 export default {
   name: 'App',
   components: {
     MainCard,
-    // TODO: Message Box
-    // MessageBox
   }
 }
 </script>
