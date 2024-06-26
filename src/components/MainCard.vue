@@ -35,7 +35,6 @@
             </a>
           </div>
         </div>
-
         
         <!-- Voiceover Section -->
         <div class="voiceover-clip-container">       
@@ -111,37 +110,49 @@
           </ul>
         </div>
         
+        <!-- Samples -->
         <div class="recents">
           <h1>Samples</h1>
           
-          <div>
-            <!-- Clip 1 -->
-            <div class="voiceover-clip">
-              <p>Commercial Sample</p>
-              <audio controls class="audio-sample">
-                <source src='../audio/bhbc_sample.wav' type="audio/mpeg">
-              </audio>
+          <div class="sample-container">
+            <div class="voiceover-container">
+              <!-- Clip 1 -->
+              <div class="voiceover-clip">
+                <p>Commercial Sample</p>
+                <audio controls class="audio-sample">
+                  <source src='../audio/bhbc_sample.wav' type="audio/mpeg">
+                </audio>
+              </div>
+              
+              <!-- Clip 2 -->
+              <div class="voiceover-clip">
+                <p>Character Sample</p>
+                <audio controls class="audio-sample">
+                  <source src='../audio/shanti_sample.mp3' type="audio/mpeg">
+                </audio>
+              </div>
+              
+              <!-- Clip 3 -->
+              <div class="voiceover-clip">
+                <p>Explainer Sample</p>
+                <audio controls class="audio-sample">
+                  <source src='../audio/weiser_sample.mp3' type="audio/mpeg">
+                </audio>
+              </div>
             </div>
-            
-            <!-- Clip 2 -->
-            <div class="voiceover-clip">
-              <p>Character Sample</p>
-              <audio controls class="audio-sample">
-                <source src='../audio/shanti_sample.mp3' type="audio/mpeg">
-              </audio>
+
+            <!-- Video/Audio Clip -->
+            <div class="video-container">
+              <div class="video-clip">
+                <video width="560" height="315" controls>
+                  <source src="../audio/BHBC-7-year-anniv.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
-            
-            <!-- Clip 3 -->
-            <div class="voiceover-clip">
-              <p>Explainer Sample</p>
-              <audio controls class="audio-sample">
-                <source src='../audio/weiser_sample.mp3' type="audio/mpeg">
-              </audio>
-            </div>
-          
           </div>
         </div>
         
+        <!-- Testimonials -->
         <div class="testimonials">
           <h1>Testimonials</h1>
           
@@ -163,9 +174,12 @@
           </p>
           <p class="attribute">- Mike S - Beard Boy Productions</p>
         </div>
-
       </div>
 
+      <!-- Bodalgo Badge -->
+      <div class="logo-badge">
+        <a href="https://www.bodalgo.com/en/voice-over-talents/salena-metreger?referer=badge" rel="noopener" target="_blank"><img alt="Professional Voice Talents" title="Professional Voice Talents" width="200" src="https://www.bodalgo.com/voice-over-talents/badge/salena-metreger/3/200"></a>
+      </div>
     </div>
   </div>
 </template>
@@ -386,6 +400,24 @@ export default {
   .audio-sample {
     padding: 10px 20px;
     color: white;
+  }
+
+  .sample-container {
+    display: flex;
+    flex-direction: column;
+
+    .voiceover-container {
+      padding-bottom: 50px;
+      
+      @media (min-width: 1400px) {
+        padding-bottom: 0;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
 </style>
