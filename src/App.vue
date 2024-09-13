@@ -1,15 +1,14 @@
 <template>
-  <MainCard/>
+  <HomePage/>
 </template>
 
 <script>
-import MainCard from './components/MainCard.vue'
-
+import HomePage from './pages/HomePage.vue'
 
 export default {
   name: 'App',
   components: {
-    MainCard,
+    HomePage,
   }
 }
 </script>
@@ -23,7 +22,9 @@ export default {
   color: #fff;
 }
 
-*, ::before, ::after {
+*, 
+::before, 
+::after {
   box-sizing: border-box;
 }
 
