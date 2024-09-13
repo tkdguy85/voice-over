@@ -6,20 +6,12 @@
     <div class="voiceover-clip">
       <p>Commercial</p>
       <audio controls class="audio-sample">
-        <source src='../audio/com_demo_1.mp3' type="audio/mpeg">
+        <source src='../audio/com_demo.mp3' type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     </div>
     
     <!-- Second Clip 1 -->
-    <div class="voiceover-clip">
-      <p>Commercial</p>
-      <audio controls class="audio-sample">
-        <source src='../audio/com_demo_2.mp3' type="audio/mpeg">
-      </audio>
-    </div>
-    
-    <!-- Third Clip 1 -->
     <div class="voiceover-clip">
       <p>Narration</p>
       <audio controls class="audio-sample">
@@ -27,7 +19,7 @@
       </audio>
     </div>
     
-    <!-- Fourth Clip 1 -->
+    <!-- Third Clip 1 -->
     <div class="voiceover-clip">
       <p>Animation</p>
       <audio controls class="audio-sample">
