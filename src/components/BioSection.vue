@@ -1,10 +1,11 @@
 <template>
   <div class="about-me">
     <h1>About the Artist</h1>
-    <p>Salena Metreger is not just a voice over artist; she's the vibrant, versatile voice your project needs to soar. With a background in marketing and a strong business acumen, Salena approaches each project as a canvas for your brand's narrative. Her commitment to professionalism is matched only by her dedication to infusing every script with life, energy, and personality.
-    <br>
-    <br>
-    Salena's voice type is as diverse as her skill set. From warm and inviting to authoritative and commanding, she has the versatility to bring any character or concept to life. Whether you need a relatable spokesperson, a reassuring narrator, or a quirky animated character, Salena's voice is the secret ingredient that adds depth and dimension to your project. Her dynamic range allows her to seamlessly transition from corporate narration to quirky character roles, ensuring that each delivery is tailored to resonate with your target audience. Whether it's a commercial, e-learning module, audiobook, or video game.</p>
+    <p>Salena Metreger is a dynamic, versatile voice-over artist known for bringing scripts to life with professionalism, creativity, and unmatched energy. With a robust background in marketing and business, Salena crafts each project as a strategic narrative, helping brands connect authentically with their audiences. From warm, inviting tones to young, conversational deliveries to authoritative and knowledgeable, she transitions effortlessly between styles, tailoring each performance to meet client needs across various formats.
+    <br><br>
+    Her portfolio spans a wide range of industries and projects. She’s the voice behind captivating characters for webtoons with Toonorator Studios and an ongoing commercial spokesperson for Black Horizon Brewing. She’s known for her work as the editor and producer of The Great Voice Podcast, as well as a guest. She’s also the voice behind several podcast guest introduction reels and product training videos.
+    <br><br>
+    Whether it’s for commercials, e-learning, audiobooks, animation or video games, Salena’s voice adds depth and dimension, making her a powerful choice for projects aiming to resonate and engage.</p>
   </div>
   
   <!-- Equipment -->
@@ -15,7 +16,7 @@
       <li>Audio-Technica AT2020 Cardioid Condenser Studio XLR Microphone with Pop Filter</li>
       <li>Beyerdynamic DT 770 PRO Headphones</li>
       <li>Focusrite Scarlett Solo 3rd Gen USB Audio Interface</li>
-      <li>Soundforge Audio Studio</li>
+      <li>Reaper</li>
       <li>Thinkpad Custom Built Laptop</li>
     </ul>
   </div>
