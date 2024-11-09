@@ -32,9 +32,7 @@
       <!-- Video/Audio Clip -->
       <div class="video-container">
         <div class="video-clip">
-          <video width="560" height="315" controls>
-            <source src="../audio/BHBC-7-year-anniv.mp4" type="video/mp4">
-          </video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ViGh_E6tkn8?si=nZkfoixqExv7vbk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
