@@ -1,7 +1,7 @@
 <template>
   <!-- Headshot -->
   <div class="contact-container">
-    <img class="head-shot" src="../assets/headshot.jpg" alt="Salena's Head-shot photo">
+    <img class="head-shot" src="../assets/salena-headshot.jpg" alt="The Lovely Salena's Head-shot photo">
     
     <!-- Contact Section -->
     <div class="contact-details">
