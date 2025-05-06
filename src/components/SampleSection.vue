@@ -11,7 +11,7 @@
             <source src='../audio/social_media_reel.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/social_media_reel.mp3')" download>Download Social Media Reel Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/social_media_reel.mp3')" download>Download Social Media Reel Here</a>
         
         <!-- Clip 2 -->
         <div class="voiceover-clip">
@@ -20,7 +20,7 @@
             <source src='../audio/bhbc_sample.wav' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/bhbc_sample.wav')" download>Download Commercial Sample Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/bhbc_sample.wav')" download>Download Commercial Sample Here</a>
         
         <!-- Clip 3 -->
         <div class="voiceover-clip">
@@ -29,7 +29,7 @@
             <source src='../audio/shanti_sample.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/shanti_sample.mp3')" download>Download Character Sample Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/shanti_sample.mp3')" download>Download Character Sample Here</a>
         
         <!-- Clip 4 -->
         <div class="voiceover-clip">
@@ -38,7 +38,7 @@
             <source src='../audio/weiser_sample.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/weiser_sample.mp3')" download>Download Explainer Sample Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/weiser_sample.mp3')" download>Download Explainer Sample Here</a>
       </div>
 
       <div class="voiceover-container">
@@ -49,7 +49,7 @@
             <source src='../audio/narration_romance.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/narration_romance.mp3')" download>Download Narration Romance Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/narration_romance.mp3')" download>Download Narration Romance Here</a>
         
         <!-- Clip 2 -->
         <div class="voiceover-clip">
@@ -58,7 +58,7 @@
             <source src='../audio/narration_scifi.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/narration_scifi.mp3')" download>Download Narration SciFi Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/narration_scifi.mp3')" download>Download Narration SciFi Here</a>
         
         <!-- Clip 3 -->
         <div class="voiceover-clip">
@@ -67,7 +67,7 @@
             <source src='../audio/narration_southern.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/narration_southern.mp3')" download>Download Narration Southern Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/narration_southern.mp3')" download>Download Narration Southern Here</a>
         
         <!-- Clip 4 -->
         <div class="voiceover-clip">
@@ -76,7 +76,7 @@
             <source src='../audio/phone_tree.mp3' type="audio/mpeg">
           </audio>
         </div>
-        <a class="audio-download" :href="require('../audio/phone_tree.mp3')" download>Download Phone Tree Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/phone_tree.mp3')" download>Download Phone Tree Here</a>
       </div>
 
 
@@ -90,10 +90,29 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      isChrome: false
+    };
+  },
+  mounted() {
+    // Displays the download link only if the browser is not Chrome
+    const userAgent = navigator.userAgent.toLowerCase();
+    this.isChrome = userAgent.includes('chrome') && !userAgent.includes('edge') && !userAgent.includes('opr');
+  },
+};
+</script>
+
 <style lang="scss">
   .sample-container {
     display: flex;
     flex-direction: column;
+    
+    .audio-sample {
+      padding: 10px 0;
+    }
 
     @media (min-width: 1400px) {
       flex-direction: row;
@@ -114,7 +133,7 @@
       font-size: 16px;
       margin-top: 10px;
       margin-bottom: 20px;
-      margin-left: 18px;
+      // margin-left: 18px;
       display: inline-block;
       position: relative;
 
