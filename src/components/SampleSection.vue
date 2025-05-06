@@ -6,28 +6,79 @@
       <div class="voiceover-container">
         <!-- Clip 1 -->
         <div class="voiceover-clip">
+          <p>Social Media Reel</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/social_media_reel.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        <a class="audio-download" :href="require('../audio/social_media_reel.mp3')" download>Download Social Media Reel Here</a>
+        
+        <!-- Clip 2 -->
+        <div class="voiceover-clip">
           <p>Commercial Sample</p>
           <audio controls class="audio-sample">
             <source src='../audio/bhbc_sample.wav' type="audio/mpeg">
           </audio>
         </div>
+        <a class="audio-download" :href="require('../audio/bhbc_sample.wav')" download>Download Commercial Sample Here</a>
         
-        <!-- Clip 2 -->
+        <!-- Clip 3 -->
         <div class="voiceover-clip">
           <p>Character Sample</p>
           <audio controls class="audio-sample">
             <source src='../audio/shanti_sample.mp3' type="audio/mpeg">
           </audio>
         </div>
+        <a class="audio-download" :href="require('../audio/shanti_sample.mp3')" download>Download Character Sample Here</a>
         
-        <!-- Clip 3 -->
+        <!-- Clip 4 -->
         <div class="voiceover-clip">
           <p>Explainer Sample</p>
           <audio controls class="audio-sample">
             <source src='../audio/weiser_sample.mp3' type="audio/mpeg">
           </audio>
         </div>
+        <a class="audio-download" :href="require('../audio/weiser_sample.mp3')" download>Download Explainer Sample Here</a>
       </div>
+
+      <div class="voiceover-container">
+        <!-- Clip 1 -->
+        <div class="voiceover-clip">
+          <p>Narration Romance</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/narration_romance.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        <a class="audio-download" :href="require('../audio/narration_romance.mp3')" download>Download Narration Romance Here</a>
+        
+        <!-- Clip 2 -->
+        <div class="voiceover-clip">
+          <p>Narration SciFi</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/narration_scifi.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        <a class="audio-download" :href="require('../audio/narration_scifi.mp3')" download>Download Narration SciFi Here</a>
+        
+        <!-- Clip 3 -->
+        <div class="voiceover-clip">
+          <p>Narration Southern</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/narration_southern.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        <a class="audio-download" :href="require('../audio/narration_southern.mp3')" download>Download Narration Southern Here</a>
+        
+        <!-- Clip 4 -->
+        <div class="voiceover-clip">
+          <p>Phone Tree</p>
+          <audio controls class="audio-sample">
+            <source src='../audio/phone_tree.mp3' type="audio/mpeg">
+          </audio>
+        </div>
+        <a class="audio-download" :href="require('../audio/phone_tree.mp3')" download>Download Phone Tree Here</a>
+      </div>
+
 
       <!-- Video/Audio Clip -->
       <div class="video-container">
@@ -49,11 +100,41 @@
       justify-content: space-between;
     }
 
-    .voiceover-container {
+    .voiceover-container + .voiceover-container {
       padding-bottom: 50px;
       
       @media (min-width: 1400px) {
         padding-bottom: 0;
+      }
+    }
+
+    .audio-download {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 18px;
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #ddd;
+        transition: width 0.5s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &:hover {
+        color: #ddd;
       }
     }
   }
