@@ -30,6 +30,7 @@ export default {
 
 html {
   background-color: #001369;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -1,5 +1,5 @@
 <template>
-  <div class="recents">
+  <div class="recents" id="samples">
     <h1>Samples</h1>
     
     <div class="sample-container">
@@ -116,6 +116,12 @@ export default {
 
     @media (min-width: 1400px) {
       flex-direction: row;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: 1660px) {
       justify-content: space-between;
     }
 

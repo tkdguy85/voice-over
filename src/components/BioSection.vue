@@ -1,5 +1,5 @@
 <template>
-  <div class="about-me">
+  <div class="about-me" id="about">
     <h1>About the Artist</h1>
     <p>Salena Metreger is a dynamic, versatile voice-over artist known for bringing scripts to life with professionalism, creativity, and unmatched energy. With a robust background in marketing and business, Salena crafts each project as a strategic narrative, helping brands connect authentically with their audiences. From warm, inviting tones to young, conversational deliveries to authoritative and knowledgeable, she transitions effortlessly between styles, tailoring each performance to meet client needs across various formats.
     <br><br>

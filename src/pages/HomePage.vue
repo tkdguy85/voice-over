@@ -1,5 +1,6 @@
 <template class="page-wrapper">
-  <div class="container">
+  <div class="container" id="home">
+    <HamburgerNav />
   
     <!-- Upper Logo -->
     <LogoBanner />
@@ -18,12 +19,12 @@
 
     <!-- Biography section -->
     <div class="bio-container">
+      <!-- Samples -->
+      <SampleSection />
+      
       <!-- Bio & Equipment -->
       <BioSection />
       
-      <!-- Samples -->
-      <SampleSection />
-    
       <!-- Testimonials -->
       <TestimonialSection />
 
@@ -43,6 +44,7 @@ import ContactSection from '../components/ContactSection.vue'
 import VoiceoverSection from '../components/VoiceoverSection.vue'
 import TestimonialSection from '../components/TestimonialSection.vue'
 import SampleSection from '../components/SampleSection.vue'
+import HamburgerNav from '@/components/HamburgerNav.vue'  
 
 export default {
   components: {
@@ -52,7 +54,8 @@ export default {
     ContactSection,
     VoiceoverSection,
     TestimonialSection,
-    SampleSection
+    SampleSection,
+    HamburgerNav
   }
 }
 </script>

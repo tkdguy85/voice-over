@@ -22,27 +22,20 @@
 </template>
 
 <style lang="scss">
-  .contact-container
-  {
-    padding-bottom: 0;
-
-    @media (max-width: 1400px) {
-      padding-bottom: 50px;
-    }
-  }
-
   .contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+    padding-bottom: 0;
+    
     .head-shot {
       max-width: 330px;
       max-height: 300px;
       margin: 10px 35px 0 0px;
       border-radius: 20%;
-
+      
       @media (max-width: 1400px) {
+        padding-bottom: 50px;
         margin: 50px 20px 50px 0;
       }
     }

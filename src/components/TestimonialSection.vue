@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonials">
+  <div class="testimonials" id="testimonials">
     <h1>Testimonials</h1>
     
     <!-- Testimonial 1 -->
