@@ -1,11 +1,25 @@
 <template>
   <div class="hero-container">
     <v-carousel 
-      progress="secondary" 
+      progress="info" 
       hide-delimiters 
       cycle 
-      show-arrows="hover"
-    >
+      show-arrows="always"
+      >
+      <template v-slot:prev="{ props }">
+        <v-btn
+          color="info"
+          variant="elevated"
+          @click="props.onClick"
+        >Last photo</v-btn>
+      </template>
+      <template v-slot:next="{ props }">
+        <v-btn
+          color="info"
+          variant="elevated"
+          @click="props.onClick"
+        >Next photo</v-btn>
+      </template>
       <v-carousel-item 
         v-for="(photo, index) in carouselPhotos" :key="index">
         <div class="portrait-container">
@@ -53,19 +67,11 @@ export default {
   .hero-container {
     text-align: center;
     padding-bottom: 50px;
-    
-    p {
-      padding-top: 20px;
-    }
 
     .portrait-container {
       align-content: center;
-      padding: 20px 0;
+      padding-top: 30px;
 
-      @media (max-width: 1200px) {
-        flex-direction: column;
-      }
-      
       .portrait {
         max-height: 500px;
         max-width: 500px;
