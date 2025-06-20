@@ -1,8 +1,6 @@
 <template>
   <!-- Headshot -->
   <div class="contact-container">
-    <img class="head-shot" src="../assets/headshot.jpg" alt="Salena's Head-shot photo">
-    
     <!-- Contact Section -->
     <div class="contact-details">
       <h2>Contact Me:</h2>
@@ -18,6 +16,10 @@
         <p>442-500-4421</p>
       </a>
     </div>
+    
+    <div class="contact-headshot">
+      <img class="head-shot" src="../assets/headshot-2.jpg" alt="Salena's Head-shot photo">
+    </div>
   </div>
 </template>
 
@@ -25,14 +27,22 @@
   .contact-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 0;
+    justify-content: space-between;
+    gap: 30px;
+    width: 60%;
+    padding-bottom: 50px;
+
+    @media (max-width: 1440px) {
+      padding-bottom: 0;
+      width: 100%;
+    }
+
     
     .head-shot {
       max-width: 330px;
       max-height: 300px;
       margin: 10px 35px 0 0px;
-      border-radius: 20%;
+      border-radius: 50%;
       
       @media (max-width: 1400px) {
         padding-bottom: 50px;
