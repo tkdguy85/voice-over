@@ -1,18 +1,20 @@
 <template>
   <div class="hero-container">
-    <div class="link">
-
-      <v-carousel height="400px" hide-delimiters>
-        <v-carousel-item 
-          v-for="(photo, index) in carouselPhotos" :key="index">
-          <div class="portrait-container">
-            <img class="portrait" :src="photo.src" :alt="photo.alt">
-          </div>
-        </v-carousel-item>
-      </v-carousel>
-      
-      <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
-    </div>
+    <v-carousel 
+      progress="secondary" 
+      hide-delimiters 
+      cycle 
+      show-arrows="hover"
+    >
+      <v-carousel-item 
+        v-for="(photo, index) in carouselPhotos" :key="index">
+        <div class="portrait-container">
+          <img class="portrait" :src="photo.src" :alt="photo.alt">
+        </div>
+      </v-carousel-item>
+    </v-carousel>
+    
+    <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
   </div>
 </template>
 
@@ -22,23 +24,23 @@ export default {
     return {
       carouselPhotos: [
         { 
-          src: require('../assets/carousel/studio-shot.jpg'), 
+          src: require('../assets/carousel/studio-shot.png'), 
           alt: 'Self portrait in studio' 
         },
         { 
-          src: require('../assets/carousel/in-the-studio.jpg'), 
+          src: require('../assets/carousel/in-the-studio.png'), 
           alt: 'Salena in a studio booth' 
         },
         { 
-          src: require('../assets/carousel/model-shot.jpg'), 
+          src: require('../assets/carousel/model-shot.png'), 
           alt: 'Model pose in black and white' 
         },
         { 
-          src: require('../assets/carousel/headshot-side.png'), 
-          alt: 'Salena\'s headshot' 
+          src: require('../assets/carousel/profile-shot.png'), 
+          alt: 'Salena\'s head-shot' 
         },
         { 
-          src: require('../assets/carousel/studio-pro.jpg'), 
+          src: require('../assets/carousel/studio-selfie.png'), 
           alt: 'Salena smiling in a studio booth' 
         }
       ]
@@ -57,10 +59,7 @@ export default {
     }
 
     .portrait-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
+      align-content: center;
       padding: 20px 0;
 
       @media (max-width: 1200px) {
@@ -68,10 +67,9 @@ export default {
       }
       
       .portrait {
-        height: 100%;
-        max-width: 600px;
-        width: 80vw;
-        border-radius: 20%;
+        max-height: 500px;
+        max-width: 500px;
+        border-radius: 15%;
       }
     }
   }
