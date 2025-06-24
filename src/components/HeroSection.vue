@@ -1,21 +1,21 @@
 <template>
   <div class="hero-container">
     <v-carousel 
-      progress="info" 
+      progress="#fff" 
       hide-delimiters 
       cycle 
       show-arrows="always"
       >
       <template v-slot:prev="{ props }">
         <v-btn
-          color="info"
+          color="#000"
           variant="elevated"
           @click="props.onClick"
         >Last photo</v-btn>
       </template>
       <template v-slot:next="{ props }">
         <v-btn
-          color="info"
+          color="#000"
           variant="elevated"
           @click="props.onClick"
         >Next photo</v-btn>
