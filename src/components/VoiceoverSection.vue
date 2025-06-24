@@ -78,6 +78,10 @@ export default {
       @media (max-width: 600px) {
         display: block;
       }
+
+      p {
+        align-self: center;
+      }
     }
 
     .voiceover-audio-container {

@@ -1,40 +1,81 @@
 <template>
   <div class="hero-container">
-    <div class="link">
-      <div class="portrait-container">
-        <img class="portrait" src="../assets/studio-shot.jpg" alt="Self portrait in studio">
-      </div>
-
-      <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
-    </div>
+    <v-carousel 
+      progress="#fff" 
+      hide-delimiters 
+      cycle 
+      show-arrows="always"
+      >
+      <template v-slot:prev="{ props }">
+        <v-btn
+          color="#000"
+          variant="elevated"
+          @click="props.onClick"
+        >Last photo</v-btn>
+      </template>
+      <template v-slot:next="{ props }">
+        <v-btn
+          color="#000"
+          variant="elevated"
+          @click="props.onClick"
+        >Next photo</v-btn>
+      </template>
+      <v-carousel-item 
+        v-for="(photo, index) in carouselPhotos" :key="index">
+        <div class="portrait-container">
+          <img class="portrait" :src="photo.src" :alt="photo.alt">
+        </div>
+      </v-carousel-item>
+    </v-carousel>
+    
+    <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      carouselPhotos: [
+        { 
+          src: require('../assets/carousel/studio-shot.png'), 
+          alt: 'Self portrait in studio' 
+        },
+        { 
+          src: require('../assets/carousel/in-the-studio.png'), 
+          alt: 'Salena in a studio booth' 
+        },
+        { 
+          src: require('../assets/carousel/model-shot.png'), 
+          alt: 'Model pose in black and white' 
+        },
+        { 
+          src: require('../assets/carousel/profile-shot.png'), 
+          alt: 'Salena\'s head-shot' 
+        },
+        { 
+          src: require('../assets/carousel/studio-selfie.png'), 
+          alt: 'Salena smiling in a studio booth' 
+        }
+      ]
+    };
+  }
+}
+</script>
 
 <style lang="scss">
   .hero-container {
     text-align: center;
     padding-bottom: 50px;
-    
-    p {
-      padding-top: 20px;
-    }
 
     .portrait-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      padding: 20px 0;
+      align-content: center;
+      padding-top: 30px;
 
-      @media (max-width: 1200px) {
-        flex-direction: column;
-      }
-      
       .portrait {
-        height: 100%;
-        max-width: 600px;
-        width: 80vw;
-        border-radius: 20%;
+        max-height: 500px;
+        max-width: 500px;
+        border-radius: 15%;
       }
     }
   }
