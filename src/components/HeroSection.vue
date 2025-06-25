@@ -28,7 +28,7 @@
       </v-carousel-item>
     </v-carousel>
     
-    <p>Work with me and let my voices bring some extra life to your projects! Let's go!</p>
+    <p class="hero-text">Work with me and let my voices bring some extra life to your projects! Let's go!</p>
   </div>
 </template>
 
@@ -72,10 +72,27 @@ export default {
       align-content: center;
       padding-top: 30px;
 
-      .portrait {
+      .portrait {        
         max-height: 500px;
         max-width: 500px;
         border-radius: 15%;
+        
+        @media (max-width: 600px) {
+          max-height: 300px;
+          max-width: 300px;
+        }
+      }
+    }
+
+    .hero-text {
+      @media (max-width: 1000px) {
+        padding-top: 30px;
+      }
+    }
+
+    .v-window__controls {
+      @media (max-width: 1000px) {
+        align-items: flex-end;
       }
     }
   }
