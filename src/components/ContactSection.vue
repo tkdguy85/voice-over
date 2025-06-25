@@ -27,13 +27,16 @@
   .contact-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     width: 60%;
     padding-bottom: 50px;
 
+    @media (min-width: 700px) {
+      justify-content: space-between;
+    }
+
     @media (max-width: 1440px) {
-      padding-bottom: 0;
       width: 100%;
     }
 
@@ -43,6 +46,11 @@
       max-height: 300px;
       margin: 20px 35px 0 0;
       border-radius: 50%;
+
+      //! Fix this you lazy bum
+      @media (min-width: 700px) {
+        margin: 20px 0;
+      }
       
       @media (max-width: 1400px) {
         margin: 50px 20px 50px 0;

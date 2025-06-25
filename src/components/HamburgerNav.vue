@@ -35,7 +35,7 @@ export default {
   .hamburger {
     position: fixed;
     top: 20px;
-    right: 24px;
+    right: 5px;
     width: 36px;
     height: 36px;
     background: transparent;
@@ -47,6 +47,10 @@ export default {
     z-index: 1000;
     cursor: pointer;
     padding: 6px;
+
+    @media (min-width: 1000px) {
+      right: 24px;
+    }
   }
 
   .hamburger span {
