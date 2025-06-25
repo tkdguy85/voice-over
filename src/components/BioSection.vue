@@ -1,11 +1,14 @@
 <template>
-  <div class="about-me">
+  <div class="about-me" id="about">
     <h1>About the Artist</h1>
-    <p>Salena Metreger is a dynamic, versatile voice-over artist known for bringing scripts to life with professionalism, creativity, and unmatched energy. With a robust background in marketing and business, Salena crafts each project as a strategic narrative, helping brands connect authentically with their audiences. From warm, inviting tones to young, conversational deliveries to authoritative and knowledgeable, she transitions effortlessly between styles, tailoring each performance to meet client needs across various formats.
+
+    <p>Salena Metreger, based in southern California, is a versatile voice-over artist known for bringing scripts to life with professionalism, creativity, and unmatched energy. With an MBA and a background in marketing, business, and creative writing, she approaches every project with audiences in mind.</p>
     <br><br>
-    Her portfolio spans a wide range of industries and projects. She’s the voice behind captivating characters for webtoons with Toonorator Studios and an ongoing commercial spokesperson for Black Horizon Brewing. She’s known for her work as the editor and producer of The Great Voice Podcast, as well as a guest. She’s also the voice behind several podcast guest introduction reels and product training videos.
+    <p>From warm, inviting tones to young, conversational deliveries to authoritative and knowledgeable, she transitions effortlessly between styles, tailoring each performance to meet client needs.</p>
     <br><br>
-    Whether it’s for commercials, e-learning, audiobooks, animation or video games, Salena’s voice adds depth and dimension, making her a powerful choice for projects aiming to resonate and engage.</p>
+    <p>Salena’s work ranges from character-driven roles in webtoons and video games to serving as the event voice for Black Horizon Brewing Company. She’s also the editor, producer, and occasional guest on The Great Voice Podcast, and lends her voice to guest intro reels, product training videos, and more.</p>
+    <br><br>
+    <p>Whether it’s a commercial, e-learning, animation, or video games, Salena brings depth, polish, and personality. She’s known for her top-tier service, professional reliability, and a lighthearted joy that makes her a favorite among returning clients.</p>
   </div>
   
   <!-- Equipment -->

@@ -1,5 +1,5 @@
 <template>
-  <div class="recents">
+  <div class="recents" id="samples">
     <h1>Samples</h1>
     
     <div class="sample-container">
@@ -83,7 +83,7 @@
       <!-- Video/Audio Clip -->
       <div class="video-container">
         <div class="video-clip">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ViGh_E6tkn8?si=nZkfoixqExv7vbk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/ViGh_E6tkn8?si=nZkfoixqExv7vbk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -116,6 +116,12 @@ export default {
 
     @media (min-width: 1400px) {
       flex-direction: row;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: 1660px) {
       justify-content: space-between;
     }
 
@@ -154,6 +160,18 @@ export default {
 
       &:hover {
         color: #ddd;
+      }
+    }
+  }
+
+  .video-container {
+    iframe {
+      width: 100%;
+      height: 100%;
+
+      @media (min-width: 600px) {
+        width: 560px;
+        height: 315px;
       }
     }
   }

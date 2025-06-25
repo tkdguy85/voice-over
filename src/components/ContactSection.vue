@@ -1,7 +1,9 @@
 <template>
   <!-- Headshot -->
   <div class="contact-container">
-    <img class="head-shot" src="../assets/headshot.jpg" alt="Salena's Head-shot photo">
+    <div class="contact-headshot">
+      <img class="head-shot" src="../assets/headshot-2.jpg" alt="Salena's Head-shot photo">
+    </div>
     
     <!-- Contact Section -->
     <div class="contact-details">
@@ -22,26 +24,34 @@
 </template>
 
 <style lang="scss">
-  .contact-container
-  {
-    padding-bottom: 0;
-
-    @media (max-width: 1400px) {
-      padding-bottom: 50px;
-    }
-  }
-
   .contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+    gap: 30px;
+    width: 60%;
+    padding-bottom: 50px;
+
+    @media (min-width: 700px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 1440px) {
+      width: 100%;
+    }
+
+    
     .head-shot {
       max-width: 330px;
       max-height: 300px;
-      margin: 10px 35px 0 0px;
-      border-radius: 20%;
+      margin: 20px 35px 0 0;
+      border-radius: 50%;
 
+      //! Fix this you lazy bum
+      @media (min-width: 700px) {
+        margin: 20px 0;
+      }
+      
       @media (max-width: 1400px) {
         margin: 50px 20px 50px 0;
       }
@@ -72,6 +82,7 @@
       text-decoration: none;
       color: lightskyblue;
       font-size: 26px;
+      padding-top: 20px;
       justify-content: left;
     }
   }
