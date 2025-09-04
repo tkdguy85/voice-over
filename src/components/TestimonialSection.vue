@@ -13,12 +13,6 @@
       “Every time I hear her voice, it’s like a warm hug.” 
     </p>
     <p class="attribute">– Stacy Berro, Voice Artist</p>
-
-
-    <!-- <p class="testimonial">
-      "She is a very gifted actress with unique vocal qualities. I would have no hesitation recommending Salena to any project. She would be an asset to any production she was cast in." 
-    </p>
-    <p class="attribute">- Bunny - Del Mar Media Arts</p> -->
     
     <!-- Testimonial 3 -->
     <p class="testimonial">

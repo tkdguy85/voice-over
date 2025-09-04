@@ -92,11 +92,16 @@ export default {
 
   .about-me,
   .equipment,
+  .podcast,
   .recents,
   .testimonials {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     @media (max-width: 800px) {
+      padding-bottom: 30px;
+    }
+
+    h1 {
       padding-bottom: 30px;
     }
   }
