@@ -47,7 +47,6 @@
       margin: 20px 35px 0 0;
       border-radius: 50%;
 
-      //! Fix this you lazy bum
       @media (min-width: 700px) {
         margin: 20px 0;
       }

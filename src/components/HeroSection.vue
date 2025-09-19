@@ -28,7 +28,7 @@
       </v-carousel-item>
     </v-carousel>
     
-    <p class="hero-text">Work with me and let my voices bring some extra life to your projects! Let's go!</p>
+    <p class="hero-text">Whatever your goal, I'm here to help you bring it to life.</p>
   </div>
 </template>
 
@@ -94,6 +94,17 @@ export default {
       @media (max-width: 1000px) {
         align-items: flex-end;
       }
+    }
+
+    .v-carousel .v-window-item,
+    .v-carousel .v-window__container {
+      transition-duration: 1500ms !important;
+      transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+    }
+
+    .v-btn:hover {
+      background-color: #333 !important;
+      transform: translateY(-1px);
     }
   }
 </style>
