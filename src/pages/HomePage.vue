@@ -92,13 +92,22 @@ export default {
 
   .about-me,
   .equipment,
+  .podcast,
   .recents,
   .testimonials {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     @media (max-width: 800px) {
       padding-bottom: 30px;
     }
+
+    h1 {
+      padding-bottom: 30px;
+    }
+  }
+
+  .testimonials {
+    padding-bottom: 50px;
   }
 
   .intro-container {
@@ -120,4 +129,8 @@ export default {
     color: white;
   }
 
+  .logo-badge {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 </style>

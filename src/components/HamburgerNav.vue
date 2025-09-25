@@ -1,11 +1,10 @@
 <template>
   <div>
     <!-- Hamburger Menu -->
-    <button class="hamburger" @click="toggleMenu" aria-label="Toggle menu">
-      <span v-if="!menuOpen"></span>
-      <span v-if="!menuOpen"></span>
-      <span v-if="!menuOpen"></span>
-      <div v-if="menuOpen" class="close-x"></div>
+    <button class="hamburger" :class="{ 'open': menuOpen }" @click="toggleMenu" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
     <div v-if="menuOpen" class="hamburger-menu">
       <a href="#home" class="menu-link">Back to Top</a>
@@ -53,41 +52,29 @@ export default {
     }
   }
 
-  .hamburger span {
+  .hamburger .bar {
     display: block;
     height: 4px;
     width: 100%;
     background: #fff;
     border-radius: 2px;
     margin: 3px 0;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
   }
 
-  .close-x {
-    position: relative;
-    width: 28px;
-    height: 28px;
-    display: block;
+  /* Animation for hamburger to X */
+  .hamburger.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
 
-  .close-x::before,
-  .close-x::after {
-    content: '';
-    position: absolute;
-    left: 13px;
-    top: 0;
-    width: 2px;
-    height: 28px;
-    background: #fff;
-    border-radius: 2px;
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
   }
 
-  .close-x::before {
-    transform: rotate(45deg);
-  }
-
-  .close-x::after {
-    transform: rotate(-45deg);
+  .hamburger.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .hamburger-menu {

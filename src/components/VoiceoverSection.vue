@@ -27,12 +27,12 @@
     
     <!-- Third Clip 1 -->
     <div class="voiceover-clip">
-      <p>Animation</p>
+      <p>Character</p>
       <div class="voiceover-audio-container">        
         <audio controls class="audio-sample">
           <source src='../audio/anim_demo.mp3' type="audio/mpeg">
         </audio>
-        <a v-if="!isChrome" class="audio-download" :href="require('../audio/anim_demo.mp3')" download>Download Animation Here</a>
+        <a v-if="!isChrome" class="audio-download" :href="require('../audio/anim_demo.mp3')" download>Download Character Here</a>
       </div>
     </div>
 
