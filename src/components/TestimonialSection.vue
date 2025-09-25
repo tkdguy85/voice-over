@@ -2,8 +2,10 @@
   <div class="testimonials" id="testimonials">
     <h1>Testimonials</h1>
     <div class="testimonial-container">
-      <div class="testimonial-item" v-for="(photo, index) in testimonials" :key="index">
-        <img class="testimonial" :src="photo.src" :alt="photo.alt">
+      <div class="testimonial-item" v-for="(quote, index) in testimonials" :key="index">
+        <p class="testimonial-quote">&ldquo;{{ quote.quote }}&rdquo;</p>
+        <p class="testimonial-name">{{ quote.name }}</p>
+        <p class="testimonial-title">{{ quote.title }}</p>
       </div>
     </div>
   </div>
@@ -15,28 +17,34 @@ export default {
     return {
       testimonials: [
         {
-          src: require('../assets/testimonials/alex-quote.png'),
-          alt: ''
+          quote: "Every project comes out great and often early. She's always doing more than we expect and that's why we keep coming back to her",
+          name: 'Alex S.',
+          title: 'Business Owner'
         },
         {
-          src: require('../assets/testimonials/stacy-quote.png'),
-          alt: ''
+          quote: "I enjoyed working with Salena. She has great communication and strives to do the best to give you the best possible outcome. I appreciate your work Salena, thank you.",
+          name: 'Daniel P.',
+          title: 'Video Producer and Video Editor'
         },
         {
-          src: require('../assets/testimonials/jonathan-quote.png'),
-          alt: ''
+          quote: "Working with Salena has been fun and smooth. Great delivery. I strongly recommend her.",
+          name: 'Ivar R.',
+          title: 'Video Producer'
         },
         {
-          src: require('../assets/testimonials/mike-quote.png'),
-          alt: ''
+          quote: "Salena is so cool. I love to see physication and visual acting. It is so important. I will certainly remember Ms. Salena.",
+          name: 'Jonathan M.',
+          title: 'Performance Productions'
         },
         { 
-          src: require('../assets/testimonials/ivar-quote.png'),
-          alt: ''
+          quote: "Took direction well. A bright and even child-like voice. I hear her having a future in animation.",
+          name: 'Mike S.',
+          title: 'Beard Boy Productions'
         },
         { 
-          src: require('../assets/testimonials/daniel-quote.png'),
-          alt: ''
+          quote: "Every time I hear her voice, it's like a warm hug.",
+          name: 'Stacy B.',
+          title: 'Voice Artist'
         }
       ]
     }
@@ -46,27 +54,54 @@ export default {
 </script>
 <style lang="scss">
   .testimonial-container {
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: space-between;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1fr);
     width: 100%;
+    gap: 30px;
+    text-align: center;
+
+    @media (min-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1300px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     .testimonial-item {
-      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 40px;
+      border: 1px solid #fff;
+      box-shadow: 15px 15px 10px #000;
+
+      @media (min-width: 1100px) {
+        min-height: 200px;
+        padding: 30px;
+      }
+      
+      @media (min-width: 1300px) {
+        padding: 20px;
+        min-height: 275px;
+      }
+      
     }
-    
-    img {
-      object-fit: contain;
-      width: 500px;
 
-      @media (min-width: 900px) {
-        width: 400px;
-      }
+    .testimonial-quote {
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
 
-      @media (min-width: 1500px) {
-        width: 350px;
-      }
+    .testimonial-name {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .testimonial-title {
+      font-size: 16px;
     }
   }
 </style>

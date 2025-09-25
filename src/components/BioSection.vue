@@ -3,7 +3,7 @@
   <div class="about-me" id="about">
     <h1>About the Artist</h1>
 
-    <p>Salena Metreger, based in southern California, is a versatile voice-over artist known for bringing scripts to life with professionalism, creativity, and unmatched energy. With an MBA and a background in marketing, business, and creative writing, she approaches every project with audiences in mind. From warm, inviting tones to young, conversational deliveries to authoritative and knowledgeable, she transitions effortlessly between styles, tailoring each performance to meet client needs. She’s known for her top-tier service, professional reliability, and a lighthearted joy that makes her a favorite among returning clients.
+    <p>Salena Metreger, based in southern California, is a versatile voice-over artist known for bringing scripts to life with professionalism, creativity, and unmatched energy. With an MBA and a background in marketing, business, and creative writing, she approaches every project with audiences in mind. From warm, inviting tones to young, conversational deliveries to authoritative and knowledgeable, she transitions effortlessly between styles, tailoring each performance to meet client needs. She’s known for her top-tier service, professional reliability, and a lighthearted joy that makes her a favorite among returning clients. Recently, she was featured in Fusion Magazine's voiceover edition in September 2025.
     <br>
     <br>
     Salena’s work ranges from character-driven roles in webtoons and video games to serving as the event voice for <strong><em>Black Horizon Brewing Company</em></strong>. She lends her voice to commercials, product training videos, social media reels, and more.</p> 
