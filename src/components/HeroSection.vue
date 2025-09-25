@@ -5,7 +5,7 @@
       hide-delimiters 
       cycle 
       show-arrows="always"
-      >
+    >
       <template v-slot:prev="{ props }">
         <v-btn
           color="#000"
