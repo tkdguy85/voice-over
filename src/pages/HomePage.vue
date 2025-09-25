@@ -106,6 +106,10 @@ export default {
     }
   }
 
+  .testimonials {
+    padding-bottom: 50px;
+  }
+
   .intro-container {
     display: flex;
     flex-wrap: wrap;
@@ -125,4 +129,8 @@ export default {
     color: white;
   }
 
+  .logo-badge {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 </style>

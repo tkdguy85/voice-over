@@ -60,7 +60,6 @@ export default {
     background: #fff;
     border-radius: 2px;
     margin: 3px 0;
-    transition: 0.3s;
   }
 
   .close-x {
