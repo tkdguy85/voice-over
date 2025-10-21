@@ -103,6 +103,10 @@ export default {
 
     h1 {
       padding-bottom: 30px;
+
+      @media (max-width: 700px) {
+        text-align: center;
+      }
     }
   }
 

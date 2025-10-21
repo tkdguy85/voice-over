@@ -8,4 +8,9 @@ module.exports = defineConfig({
       },
     },
   },
+  devServer: {
+    port: 4001,
+    host: 'localhost',
+    open: true
+  }
 })
