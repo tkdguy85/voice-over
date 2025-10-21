@@ -47,8 +47,8 @@
       margin: 20px 35px 0 0;
       border-radius: 50%;
 
-      @media (min-width: 700px) {
-        margin: 20px 0;
+      @media (max-width: 700px) {
+        margin: 20px 0 !important;
       }
       
       @media (max-width: 1400px) {
@@ -57,10 +57,14 @@
     }
 
     .contact-details {
-      text-align: left;
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media (min-width: 700px) {
+        text-align: left;
+      }
 
       .email-logo {
         height: 36px;
