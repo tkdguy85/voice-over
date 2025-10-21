@@ -82,11 +82,13 @@
       p {
         font-size: 20px;
         margin-top: 25px;
+        margin-bottom: 50px;
       }
     }
 
     .podcast-logo {
       max-width: 500px;
+      width: 80vw;
       border-radius: 15px;
       margin-top: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
