@@ -1,5 +1,7 @@
 # vo-portfolio
 
+Short but sweet landing page for my wife's VoiceOver business.
+
 ## Project setup
 ```
 yarn install
