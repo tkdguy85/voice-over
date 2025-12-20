@@ -99,22 +99,12 @@
 
 
       <!-- Video/Audio Clip -->
-      <!-- <div class="video-container">
-        <div class="video-clip">
-          <iframe src="https://www.youtube.com/embed/ViGh_E6tkn8?si=nZkfoixqExv7vbk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div> -->
-      
       <div class="video-container">
         <div class="video-clip">
-          <video controls class="video-sample" :poster="require('../assets/2025-yir-poster.png')">
-            <source src='../audio/2025-year-in-review.mp4' type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <iframe src="https://www.youtube.com/embed/xTlXnvjjcSU?si=pFDVbnVjOpwagULO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -196,12 +186,12 @@ export default {
   }
 
   .video-container {
-    iframe, video {
+    iframe {
       width: 100%;
       height: 100%;
 
       @media (min-width: 600px) {
-        width: 545px;
+        width: 560px;
         height: 315px;
       }
     }
