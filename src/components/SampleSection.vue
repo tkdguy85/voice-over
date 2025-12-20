@@ -101,7 +101,7 @@
       <!-- Video/Audio Clip -->
       <div class="video-container">
         <div class="video-clip">
-          <iframe src="https://www.youtube.com/embed/ViGh_E6tkn8?si=nZkfoixqExv7vbk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xTlXnvjjcSU?si=LDvgBwd9rANJkRDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -186,12 +186,12 @@ export default {
   }
 
   .video-container {
-    iframe {
+    iframe, video {
       width: 100%;
       height: 100%;
 
       @media (min-width: 600px) {
-        width: 560px;
+        width: 545px;
         height: 315px;
       }
     }
