@@ -21,7 +21,7 @@
         >Next photo</v-btn>
       </template>
       <v-carousel-item 
-        v-for="(photo, index) in carouselPhotos" :key="index">
+        v-for="(photo, index) in extendedCarousel" :key="index">
         <div class="portrait-container">
           <img class="portrait" :src="photo.src" :alt="photo.alt">
         </div>
@@ -58,7 +58,30 @@ export default {
           alt: 'Salena smiling in a studio booth' 
         }
       ]
-    };
+    }
+  },
+  computed: {
+    extendedCarousel() {
+      return [
+        this.carouselPhotos[this.carouselPhotos.length - 1],
+        ...this.carouselPhotos,
+        this.carouselPhotos[0]
+      ]
+    }
+  },
+  methods: {
+    oncChange(index) {
+      if (index === 0) {
+        this.$nextTick(() => {
+          this.current = this.carouselPhotos.length
+        })
+      }
+      if (index === this.carouselPhotos.length + 1) {
+        this.$nextTick(() => {
+          this.current = 1
+        })
+      }
+    }
   }
 }
 </script>
