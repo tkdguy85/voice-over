@@ -1,10 +1,10 @@
 <template>
   <div class="hero-container">
-    <v-carousel 
-      progress="#fff" 
+    <v-carousel  
       hide-delimiters 
       cycle 
       show-arrows="always"
+      :interval="5000"
     >
       <template v-slot:prev="{ props }">
         <v-btn
@@ -21,7 +21,7 @@
         >Next photo</v-btn>
       </template>
       <v-carousel-item 
-        v-for="(photo, index) in carouselPhotos" :key="index">
+        v-for="(photo, index) in extendedCarousel" :key="index">
         <div class="portrait-container">
           <img class="portrait" :src="photo.src" :alt="photo.alt">
         </div>
@@ -58,7 +58,31 @@ export default {
           alt: 'Salena smiling in a studio booth' 
         }
       ]
-    };
+    }
+  },
+  computed: {
+    extendedCarousel() {
+      return [
+        this.carouselPhotos[this.carouselPhotos.length - 1],
+        ...this.carouselPhotos,
+        this.carouselPhotos[0]
+      ]
+    }
+  },
+  methods: {
+    oncChange(index) {
+      // This is a janky patch for keeping the carousel flow continuous. Use SwiperJS next time.
+      if (index === 0) {
+        this.$nextTick(() => {
+          this.current = this.carouselPhotos.length
+        })
+      }
+      if (index === this.carouselPhotos.length + 1) {
+        this.$nextTick(() => {
+          this.current = 1
+        })
+      }
+    }
   }
 }
 </script>
@@ -98,7 +122,7 @@ export default {
 
     .v-carousel .v-window-item,
     .v-carousel .v-window__container {
-      transition-duration: 1500ms !important;
+      transition-duration: 3000ms !important;
       transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
     }
 
