@@ -1,10 +1,10 @@
 <template>
   <div class="hero-container">
-    <v-carousel 
-      progress="#fff" 
+    <v-carousel  
       hide-delimiters 
       cycle 
       show-arrows="always"
+      :interval="5000"
     >
       <template v-slot:prev="{ props }">
         <v-btn
@@ -71,6 +71,7 @@ export default {
   },
   methods: {
     oncChange(index) {
+      // This is a janky patch for keeping the carousel flow continuous. Use SwiperJS next time.
       if (index === 0) {
         this.$nextTick(() => {
           this.current = this.carouselPhotos.length
@@ -121,7 +122,7 @@ export default {
 
     .v-carousel .v-window-item,
     .v-carousel .v-window__container {
-      transition-duration: 1500ms !important;
+      transition-duration: 3000ms !important;
       transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
     }
 
