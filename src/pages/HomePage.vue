@@ -30,9 +30,9 @@
 
     </div>
     <!-- Bodalgo Badge -->
-    <div class="logo-badge">
+    <!-- <div class="logo-badge">
       <a href="https://www.bodalgo.com/en/voice-over-talents/salena-metreger?referer=badge" rel="noopener" target="_blank"><img alt="Professional Voice Talents" title="Professional Voice Talents" width="200" src="https://www.bodalgo.com/voice-over-talents/badge/salena-metreger/3/200"></a>
-    </div>
+    </div> -->
   </div>
 </template>
 
