@@ -36,7 +36,7 @@
     <h1>Equipment</h1>
     <ul>
       <li>Sound Treated In-Home Studio</li>
-      <li>Audio-Technica AT2020 Cardioid Condenser Studio XLR Microphone with Pop Filter</li>
+      <li>Sennheiser MK4 Cardioid XLR with Shock Mount and Pop Filter</li>
       <li>Beyerdynamic DT 770 PRO Headphones</li>
       <li>Focusrite Scarlett Solo 3rd Gen USB Audio Interface</li>
       <li>Reaper</li>
