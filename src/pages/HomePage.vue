@@ -28,7 +28,7 @@
       <!-- Testimonials -->
       <TestimonialSection />
 
-      <!-- HighlighttSection -->
+      <!-- Highlight Section -->
       <HighlightSection />
 
     </div>

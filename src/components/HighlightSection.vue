@@ -2,13 +2,39 @@
   <div class="highlights" id="highlights">
     <h1>Highlights</h1>
     <div class="highlights-container">
-      <div class="highlight-item">
+      <!-- <div class="highlight-item" v-for="(item, index) in highlights">
 
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 <script>
+export default {
+  data() {
+    return {
+      highlights: [
+        {
+          title: "Fusion Magazine Featured Voice Artist",
+          image: "",
+          alt: "Fusion Magazine logo",
+          link: "https://fusionmagazine.jp/magazine-posts/salena-metreger",
+        },
+        {
+          title: "Colorado WebFest Finalist",
+          image: "",
+          alt: "Colorado Webfest Competition logo",
+          link: "",
+        },
+        {
+          title: "2026 Influential Women",
+          image: "",
+          alt: "Influential Women magazine article featuring a headshot of Voiceover Artist Salena Metreger",
+          link: "",
+        },
+      ]
+    }
+  }
+}
 
 </script>
 <style lang="scss">
