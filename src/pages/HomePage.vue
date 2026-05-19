@@ -28,6 +28,9 @@
       <!-- Testimonials -->
       <TestimonialSection />
 
+      <!-- HighlighttSection -->
+      <HighlightSection />
+
     </div>
     <!-- Bodalgo Badge -->
     <!-- <div class="logo-badge">
@@ -43,8 +46,9 @@ import BioSection from '../components/BioSection.vue'
 import ContactSection from '../components/ContactSection.vue'
 import VoiceoverSection from '../components/VoiceoverSection.vue'
 import TestimonialSection from '../components/TestimonialSection.vue'
+import HighlightSection from '../components/HighlightSection.vue'
 import SampleSection from '../components/SampleSection.vue'
-import HamburgerNav from '@/components/HamburgerNav.vue'  
+import HamburgerNav from '../components/HamburgerNav.vue'
 
 export default {
   components: {
@@ -54,6 +58,7 @@ export default {
     ContactSection,
     VoiceoverSection,
     TestimonialSection,
+    HighlightSection,
     SampleSection,
     HamburgerNav
   }
@@ -102,7 +107,8 @@ export default {
   .equipment,
   .podcast,
   .recents,
-  .testimonials {
+  .testimonials, 
+  .highlights {
     padding-bottom: 100px;
 
     @media (max-width: 800px) {
@@ -118,7 +124,8 @@ export default {
     }
   }
 
-  .testimonials {
+  .testimonials,
+  .highlights {
     padding-bottom: 50px;
   }
 
