@@ -132,7 +132,7 @@ export default {
       padding: 10px 0;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       gap: 50px;
       flex-wrap: wrap;
