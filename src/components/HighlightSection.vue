@@ -2,9 +2,13 @@
   <div class="highlights" id="highlights">
     <h1>Highlights</h1>
     <div class="highlights-container">
-      <!-- <div class="highlight-item" v-for="(item, index) in highlights">
-
-      </div> -->
+      <div class="highlight-item" v-for="(item, index) in highlights" :key="index">
+        <img class="highlight-image" :src="item.image" :alt="item.alt">
+        <div class="highlight-content">
+          <p class="highlight-title">{{ item.title }}</p>
+          <a class="highlight-link" :href="item.link" v-if="item.link">Read More</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -15,19 +19,19 @@ export default {
       highlights: [
         {
           title: "Fusion Magazine Featured Voice Artist",
-          image: "",
+          image: require("../assets/highlights/fusion-logo.png"),
           alt: "Fusion Magazine logo",
           link: "https://fusionmagazine.jp/magazine-posts/salena-metreger",
         },
         {
           title: "Colorado WebFest Finalist",
-          image: "",
+          image: require("../assets/highlights/laurel-col-webfest.png"),
           alt: "Colorado Webfest Competition logo",
           link: "",
         },
         {
           title: "2026 Influential Women",
-          image: "",
+          image: require("../assets/highlights/influential-women-salena.png"),
           alt: "Influential Women magazine article featuring a headshot of Voiceover Artist Salena Metreger",
           link: "",
         },
@@ -35,10 +39,9 @@ export default {
     }
   }
 }
-
 </script>
 <style lang="scss">
-  .highlight-container {
+  .highlights-container {
     display: grid;
     grid-template-columns: repeat(1fr);
     width: 100%;
@@ -57,10 +60,14 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 30px 40px;
+      justify-content: space-between;
+      padding: 30px 50px;
       border: 1px solid #fff;
       box-shadow: 15px 15px 10px #000;
+
+      img {
+        max-width: 300px;
+      }
 
       @media (min-width: 1100px) {
         min-height: 200px;
@@ -69,7 +76,7 @@ export default {
       
       @media (min-width: 1300px) {
         padding: 20px;
-        min-height: 275px;
+        min-height: 300px;
       }
       
     }
