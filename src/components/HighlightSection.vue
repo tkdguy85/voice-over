@@ -86,7 +86,6 @@ export default {
         object-position: center;
         flex: 1;
 
-
         @media (min-width: 1100px) {
           max-width: 400px;
         }
@@ -94,7 +93,6 @@ export default {
         @media (min-width: 1300px) {
           max-width: 500px;
         }
-
 
         img {
           width: 100%;
@@ -104,7 +102,7 @@ export default {
       
       
       .highlight-content {
-        margin-top: auto;
+        margin-top: 50px;
       }
       
       .highlight-link {

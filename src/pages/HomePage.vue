@@ -124,9 +124,8 @@ export default {
     }
   }
 
-  .testimonials,
   .highlights {
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 
   .intro-container {
