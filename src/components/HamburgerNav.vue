@@ -11,6 +11,7 @@
       <a href="#samples" class="menu-link">Samples</a>
       <a href="#about" class="menu-link">About</a>
       <a href="#testimonials" class="menu-link">Testimonials</a>
+      <a href="#highlights" class="menu-link">Highlights</a>
     </div>
   </div>
 </template>
