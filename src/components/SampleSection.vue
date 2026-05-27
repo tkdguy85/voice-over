@@ -127,16 +127,18 @@ export default {
   .sample-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     .audio-sample {
       padding: 10px 0;
     }
-
-    @media (min-width: 1400px) {
+    
+    @media (min-width: 768px) {
+      align-items: normal;
+      justify-content: center;
       flex-direction: row;
       gap: 50px;
       flex-wrap: wrap;
-      justify-content: flex-start;
     }
 
     @media (min-width: 1660px) {
