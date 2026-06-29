@@ -26,9 +26,9 @@ export default {
           link: "https://fusionmagazine.jp/magazine-posts/salena-metreger",
         },
         {
-          title: "Colorado WebFest Finalist",
-          image: require("../assets/highlights/laurel-col-webfest.png"),
-          alt: "Colorado Webfest Competition logo",
+          title: "Colorado WebFest Winner",
+          image: require("../assets/highlights/colorado-webfest-award.png"),
+          alt: "2026 Colorado Webfest Competition logo showcasing an award win.",
           link: "",
         },
         {
