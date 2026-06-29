@@ -2,7 +2,7 @@
   <!-- Headshot -->
   <div class="contact-container">
     <div class="contact-headshot">
-      <img class="head-shot" src="../assets/carousel/studio-shot.png" alt="Salena's Head-shot photo">
+      <img class="head-shot" src="../assets/carousel/studio-shot.png" alt="Lovely photo of Salena in her sound-booth">
     </div>
     
     <!-- Contact Section -->
