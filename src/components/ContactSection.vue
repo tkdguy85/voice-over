@@ -2,7 +2,7 @@
   <!-- Headshot -->
   <div class="contact-container">
     <div class="contact-headshot">
-      <img class="head-shot" src="../assets/headshot-2.jpg" alt="Salena's Head-shot photo">
+      <img class="head-shot" src="../assets/carousel/studio-shot.png" alt="Lovely photo of Salena in her sound-booth">
     </div>
     
     <!-- Contact Section -->
@@ -45,7 +45,7 @@
       max-width: 330px;
       max-height: 300px;
       margin: 20px 35px 0 0;
-      border-radius: 50%;
+      border-radius: 10%;
 
       @media (max-width: 700px) {
         margin: 20px 0 !important;
