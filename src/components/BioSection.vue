@@ -43,10 +43,11 @@
       </div>
 
       <div class="podcast-logo-block">
-        <a href="https://rss.com/podcasts/vsc-coldreads-hottakes/#episodes" target="_blank" rel="noopener noreferrer">
-          <img class="podcast-logo" src="../assets/cold_reads_and_hot_takes_logo.jpg" alt="Cold Reads and Hot Takes Podcast Logo">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img class="podcast-logo" src="../assets/coming-soon.jpg" alt="At the Seam Podcast logo">
         </a>
-        <p><a href="https://rss.com/podcasts/vsc-coldreads-hottakes/#episodes" target="_blank" rel="noopener noreferrer" class="podcast-link">Cold Read/Hot Takes</a> is a monthly showcase of audio entertainment created, performed, and produced by members of the <strong><em>Voice Support Community (VSC)</em></strong> and features audio monologues, dialogues, and group performances from a wide variety of genres and styles.</p>
+        <p><a href="#" target="_blank" rel="noopener noreferrer" class="podcast-link">At the Seam Podcast</a></p>
+        <p>Coming Soon!!!</p>
       </div>
     </div>
   </div>
@@ -75,20 +76,12 @@
 
   .podcast-links {
     display: grid;
-    grid-template-columns: repeat(1);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
-    justify-content: space-around;
-
-    @media (min-width: 1100px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (min-width: 1300px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    width: 100%;
 
     .podcast-logo-block {
-      // max-width: 400px;
+      min-width: 0;
       text-align: center;
 
       p {
@@ -103,14 +96,17 @@
       margin-top: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
-
-      img {
-        width: 100%;
-      }
-
+      
+      
       &:hover {
         transform: scale(1.05);
       }
+    }
+    
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
     }
 
     .podcast-link {
