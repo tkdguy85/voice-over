@@ -56,6 +56,10 @@ export default {
         { 
           src: require('../assets/carousel/studio-selfie.png'), 
           alt: 'Salena smiling in a studio booth' 
+        },
+        {
+          src: require('../assets/highlights/colorado-webfest-award.png'),
+          alt: 'Colorado WebFest 2026 Award Winner logo'
         }
       ]
     }
