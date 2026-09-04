@@ -11,7 +11,7 @@
           color="#000"
           variant="elevated"
           @click="props.onClick"
-        >Last photo</v-btn>
+        >Prev photo</v-btn>
       </template>
       <template v-slot:next="{ props }">
         <v-btn

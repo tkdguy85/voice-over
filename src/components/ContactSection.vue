@@ -32,11 +32,11 @@
     width: 60%;
     padding-bottom: 50px;
 
-    @media (min-width: 700px) {
+    @media (min-width: 750px) {
       justify-content: space-between;
     }
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1400px) {
       width: 100%;
     }
 
