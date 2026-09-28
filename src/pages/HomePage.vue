@@ -79,48 +79,37 @@ export default {
   }
 
   .container {
-    margin: 10px 40px;
-
-    @media (min-width: 1000px) {
-      margin: 10px 80px;
-    }
-
-    @media (min-width: 1400px) {
-      margin: 10px 100px;
-    }
-
-    @media (min-width: 1600px) {
-      margin: 10px 200px;
-    }
+    margin: 10px clamp(40px, 8vw - 40px, 200px);
   }
-
-  .bio-container {
-    text-align: left;
-    padding-bottom: 100px;
-    
-    ul {
-      padding-inline-start: 20px;
-    }
-  }
-
+  
   .about-me,
   .equipment,
   .podcast,
   .recents,
   .testimonials, 
+  .bio-container,
   .highlights {
     padding-bottom: 100px;
-
+    
     @media (max-width: 800px) {
       padding-bottom: 30px;
     }
-
+    
     h1 {
       padding-bottom: 30px;
-
+      
       @media (max-width: 700px) {
         text-align: center;
       }
+    }
+    
+  }
+  
+  .bio-container {
+    text-align: left;
+    
+    ul {
+      padding-inline-start: 20px;
     }
   }
 
