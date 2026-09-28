@@ -42,10 +42,12 @@
 
     
     .head-shot {
-      max-width: 330px;
-      max-height: 300px;
+      width: 100%;
+      max-height: 250px;
+      aspect-ratio: 1/1;
       margin: 20px 35px 0 0;
-      border-radius: 10%;
+      border-radius: 50%;
+      object-fit: cover;
 
       @media (max-width: 700px) {
         margin: 20px 0 !important;
