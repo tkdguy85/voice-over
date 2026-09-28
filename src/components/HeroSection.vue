@@ -63,9 +63,7 @@ export default {
   computed: {
     extendedCarousel() {
       return [
-        this.carouselPhotos[this.carouselPhotos.length - 1],
-        ...this.carouselPhotos,
-        this.carouselPhotos[0]
+        ...this.carouselPhotos
       ]
     }
   },
