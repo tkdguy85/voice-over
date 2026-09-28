@@ -93,34 +93,35 @@ export default {
       margin: 10px 200px;
     }
   }
-
-  .bio-container {
-    text-align: left;
-    padding-bottom: 100px;
-    
-    ul {
-      padding-inline-start: 20px;
-    }
-  }
-
+  
   .about-me,
   .equipment,
   .podcast,
   .recents,
   .testimonials, 
+  .bio-container,
   .highlights {
     padding-bottom: 100px;
-
+    
     @media (max-width: 800px) {
       padding-bottom: 30px;
     }
-
+    
     h1 {
       padding-bottom: 30px;
-
+      
       @media (max-width: 700px) {
         text-align: center;
       }
+    }
+    
+  }
+  
+  .bio-container {
+    text-align: left;
+    
+    ul {
+      padding-inline-start: 20px;
     }
   }
 
