@@ -12,7 +12,7 @@
   <!-- Podcast Section -->
   <div class="podcast">
     <h1>Podcast</h1>
-    <p>Salena also works on two podcasts as a producer, audio designer, and talent. Taking what she’s learned from the Producer chair and applying it to her work as a voiceover artist.</p>
+    <p>Salena is the writer, director, producer, sound designer and Talent for At The Seam Podcast and producer and editor for The Great Voice Podcast. She is taking everything she’s learned from the production side and applying it to her work as a voiceover artist.</p>
 
     <div class="podcast-links">
       
