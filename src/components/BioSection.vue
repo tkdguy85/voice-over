@@ -12,9 +12,11 @@
   <!-- Podcast Section -->
   <div class="podcast">
     <h1>Podcast</h1>
-    <p>Salena also works on two podcasts as a producer, audio designer, and talent. Taking what she’s learned from the Producer chair and applying it to her work as a voiceover artist.</p>
+    <p>Salena is the writer, director, producer, sound designer and Talent for At The Seam Podcast and producer and editor for The Great Voice Podcast. She is taking everything she’s learned from the production side and applying it to her work as a voiceover artist.</p>
 
     <div class="podcast-links">
+      
+      <!-- Great Voice Podcast -->
       <div class="podcast-logo-block">
         <a href="https://greatvoicepodcast.podbean.com" target="_blank" rel="noopener noreferrer">
           <img class="podcast-logo" src="../assets/great_voice_logo.jpg" alt="Great Voice Podcast Logo">
@@ -22,12 +24,21 @@
         <p><a href="https://greatvoicepodcast.podbean.com" target="_blank" rel="noopener noreferrer" class="podcast-link">The Great Voice Podcast</a> is an industry show about voiceover where you can listen as host <strong><em>Susan Berkley</em></strong> teaches students how to break down a script and bring it to life as well as hear from industry guests.</p>
       </div>
 
+      <!-- Cold Reads / Hot Takes -->
       <div class="podcast-logo-block">
+        <a href="https://attheseampodcast.com/" target="_blank" rel="noopener noreferrer">
+          <img class="podcast-logo" src="../assets/at-the-seam.webp" alt="At The Seam audio-drama Logo">
+        </a>
+        <p><a href="https://attheseampodcast.com/" target="_blank" rel="noopener noreferrer" class="podcast-link">At The Seam</a> is a fantasy investigative audio drama following Nyx, a fairy wisp journalist whose curiosity and ideals pull her into the most dangerous story of her life.</p>
+      </div>
+
+      <!-- Cold Reads / Hot Takes -->
+      <!-- <div class="podcast-logo-block">
         <a href="https://rss.com/podcasts/vsc-coldreads-hottakes/#episodes" target="_blank" rel="noopener noreferrer">
           <img class="podcast-logo" src="../assets/cold_reads_and_hot_takes_logo.jpg" alt="Cold Reads and Hot Takes Podcast Logo">
         </a>
         <p><a href="https://rss.com/podcasts/vsc-coldreads-hottakes/#episodes" target="_blank" rel="noopener noreferrer" class="podcast-link">Cold Read/Hot Takes</a> is a monthly showcase of audio entertainment created, performed, and produced by members of the <strong><em>Voice Support Community (VSC)</em></strong> and features audio monologues, dialogues, and group performances from a wide variety of genres and styles.</p>
-      </div>
+      </div> -->
     </div>
   </div>
 
